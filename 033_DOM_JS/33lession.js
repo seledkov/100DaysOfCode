@@ -46,8 +46,14 @@ console.log(newAnchor);
 titleElement.append(newAnchor);
 
 // titleElementById.parentElement.append(titleElementById);
-titleElementById.parentElement.insertBefore(secondParagraphElement);
+document.body.insertBefore(titleElement, secondParagraphElement);
 
 // lession 35
 
-titleElement.innerHTML = 'it is new inner for <b>title<b>';
+secondParagraphElement.innerHTML = 'it is new inner for <strong>title</strong>';
+
+let innerElement = document.createElement('span');
+innerElement.innerHTML = ' <strong> Hi </strong> i am span ';
+
+secondParagraphElement.append(innerElement);
+secondParagraphElement.insertBefore(innerElement, secondParagraphElement.querySelector('strong'));
