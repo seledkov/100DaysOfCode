@@ -1,0 +1,6 @@
+input.warning {
+  background-color: rgba(255, 0, 0, 0.123);
+}
+span.warning {
+  color: red;
+}

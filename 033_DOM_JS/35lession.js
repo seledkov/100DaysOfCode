@@ -1,21 +1,29 @@
-let paragraphElement = document.querySelector('p');
+let spanElement = document.querySelector('#inputLenght');
 let inputElement = document.querySelector('input');
-
+const maxLength = inputElement.maxLength;
 function changeParagraphText(value) {
-  paragraphElement.textContent = value;
+  spanElement.textContent = value;
 }
 
-const changePText = () => {
-  paragraphElement.textContent = 'clicked';
+const changePText = (value) => {
+  spanElement.textContent = value;
 };
 
 function getInputText(e) {
   //   let value = inputElement.value;
-  let value = e.target.value;
+  let remainedValue = maxLength - e.target.value.length;
   //   let value = e.data;
-  console.log(e);
-  changeParagraphText(value.length);
+
+  changeParagraphText(remainedValue);
+
+  if (remainedValue < 5) {
+    inputElement.classList.add('warning');
+    spanElement.classList.add('warning');
+  } else {
+    inputElement.classList.remove('warning');
+    spanElement.classList.remove('warning');
+  }
 }
 
-paragraphElement.addEventListener('input', changePText);
+spanElement.addEventListener('input', changePText);
 inputElement.addEventListener('input', getInputText);
