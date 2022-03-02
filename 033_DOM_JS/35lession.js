@@ -16,7 +16,8 @@ function getInputText(e) {
 
   changeParagraphText(remainedValue);
 
-  if (remainedValue < 5) {
+  // lession 37 succ
+  if (remainedValue < 4) {
     inputElement.classList.add('warning');
     spanElement.classList.add('warning');
   } else {
