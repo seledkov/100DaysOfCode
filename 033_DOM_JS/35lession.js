@@ -17,6 +17,7 @@ function getInputText(e) {
   changeParagraphText(remainedValue);
 
   // lession 37 succ
+  // i can add find have or not class, but in lession do no need
   if (remainedValue < 4) {
     inputElement.classList.add('warning');
     spanElement.classList.add('warning');
