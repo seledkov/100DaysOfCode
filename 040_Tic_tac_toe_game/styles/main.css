@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(24, 24, 24);
+  background-color: rgb(247, 242, 247);
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(61, 0, 61);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(82, 0, 82);
+  border: 1px solid rgb(32, 11, 32);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-accent {
+  background-color: rgb(238, 209, 113);
+  color: inherit;
+}
