@@ -23,7 +23,8 @@ header {
   border: 1px solid rgb(32, 11, 32);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .btn:hover {
   opacity: 0.8;
@@ -31,4 +32,146 @@ header {
 .btn-accent {
   background-color: rgb(238, 209, 113);
   color: inherit;
+}
+
+/* === configuration === */
+#config-overlay {
+  text-align: center;
+}
+#config-overlay h2 {
+  margin: 0.5rem 0;
+}
+.form-control label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 700;
+}
+.form-control input {
+  font-family: inherit;
+  border: 1px solid rgb(187, 187, 187);
+  width: 15rem;
+  padding: 0.3rem;
+}
+.form-control {
+  margin: 0.5rem 0;
+}
+
+#game-configuration {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+#game-configuration ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#game-configuration li {
+  width: 50%;
+  border-radius: 6px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(254, 242, 255);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+#game-configuration h2 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+#game-configuration h3 {
+  color: rgb(61, 0, 61);
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+#game-configuration p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* === game === */
+#active-game {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+  /* display: none; */
+}
+
+#game-over {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 2rem;
+  background-color: rgb(61, 0, 61);
+  color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  display: none;
+}
+
+#game-over h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+#active-player-name {
+  font-weight: 700;
+  color: rgb(61, 0, 61);
+}
+
+#game-board {
+  width: 20rem;
+  height: 20rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+  margin: 0 auto;
+}
+#game-board li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  background-color: rgb(224, 196, 247);
+  border: 1px solid rgb(39, 14, 63);
+  cursor: pointer;
+  border-radius: 2px;
+}
+#game-board li:hover {
+  background-color: rgb(143, 40, 228);
+}
+#game-board li.disabled {
+  background-color: rgb(143, 40, 228);
+  cursor: default;
+}
+/* === modal === */
+.modal {
+  display: none;
+  position: fixed;
+  left: 5%;
+  width: 90%;
+  top: 20%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 48rem) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+.backdrop {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
