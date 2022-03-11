@@ -166,7 +166,7 @@ header {
     width: 40rem;
   }
 }
-.backdrop {
+#backdrop {
   display: none;
   position: fixed;
   left: 0;
