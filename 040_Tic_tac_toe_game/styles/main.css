@@ -52,6 +52,17 @@ header {
   width: 15rem;
   padding: 0.3rem;
 }
+
+.error label {
+  color: rgb(151, 23, 23);
+}
+
+.error input {
+  border-color: rgb(151, 23, 23);
+  color: rgb(151, 23, 23);
+  background-color: rgb(151, 23, 23, 0.1);
+}
+
 .form-control {
   margin: 0.5rem 0;
 }
