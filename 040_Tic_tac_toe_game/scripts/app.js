@@ -1,4 +1,4 @@
-const gameData = [
+let gameData = [
   [0, 0, 0],
   [0, 0, 0],
   [0, 0, 0],
@@ -6,6 +6,7 @@ const gameData = [
 
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
 
 const players = [
   { name: '', symbol: 'X' },
@@ -19,6 +20,7 @@ const errorOutputElement = document.getElementById('error-output');
 const gameZoneElement = document.getElementById('active-game');
 // const gameZoneElements = document.querySelectorAll('#game-board li');
 const gameBoardElement = document.getElementById('game-board');
+const gameOverElement = document.getElementById('game-over');
 
 const editPlayer1BtnElement = document.getElementById('edit-player-1-btn');
 const editPlayer2BtnElement = document.getElementById('edit-player-2-btn');
