@@ -121,6 +121,8 @@ function getWinnerPlayer() {
 const gameOver = (playerId) => {
   gameOverElement.style.display = 'block';
 
+  // block unclicked li - add disabled class
+
   if (playerId > 0) {
     const playerName = players[playerId - 1].name;
     gameOverElement.firstElementChild.firstElementChild.textContent = playerName;
