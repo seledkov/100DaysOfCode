@@ -1,0 +1,21 @@
+.carousel-container {
+  width: 100%;
+  max-width: 40rem;
+  height: 20rem;
+  margin: 2rem auto;
+}
+
+.carousel-container img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+#signup {
+  width: 20rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+#signup {
+  width: 20rem;
+  margin: 1rem auto;
+}

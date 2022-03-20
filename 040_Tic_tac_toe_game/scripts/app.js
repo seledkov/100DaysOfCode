@@ -42,3 +42,5 @@ startNewGameBtnElement.addEventListener('click', startNewGame);
 // }
 
 gameBoardElement.addEventListener('click', selectGameField);
+
+// job working
