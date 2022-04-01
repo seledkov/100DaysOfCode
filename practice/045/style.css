@@ -1,5 +1,8 @@
 body {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body h1 {
   text-align: center;
 }
 
