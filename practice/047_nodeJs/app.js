@@ -11,3 +11,4 @@ promise.then(
     console.log('secod');
   }, 2000),
 );
+window.addEventListener('click', console.log('[fj'))
