@@ -24,7 +24,16 @@
         </form>
       </section>
       <section id="todos">
-        <ul id="todos-list"></ul>
+        <p v-if="todos.length === 0">add new todo - just write text</p>
+        <ul id="todos-list">
+          <li v-for="todo in todos">
+            <p>{{ todo.text }}</p>
+            <div>
+              <button @click="startEditTodo(todo.id)">edit</button>
+              <button @click="deleteTodo(todo.id)">delete</button>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
